@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Arial';
+    src: url(../assets/fonts/arial.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url(./../../assets/fonts/georgia.woff);
+    font-weight: 400;
+}
+
+
+:root {
+    --color-primary: #F1CDB3;
+    --color-primary-light: #FDDCC4;
+    --color-dark-s: #CDCDCD;
+    --color-dark-m: #B2B2B2;
+    --color-dark-l: #545454;
+    --color-dark-xl: #4C4C4C;
+    --color-dark-2xl: #444444;
+    --color-dark-3xl: #292929;
+    --color-light-s: #FAFAFA;
+    --color-light-l: #F6F6F6;
+    --color-light-xl: #FFFFFF;
+
+
+    --font-h2: 44px;
+    --font-h3: 35px;
+    --font-h3-mobile: 25px;
+    --font-h4: 20px;
+    --font-h5: 15px;
+    --font-h5-modal: 15px;
+    --font-paragraph-l: 15px;
+    --font-paragraph-l: 12px;
+    --font-paragraph-mobile: 32px;
+    --font-logo: 32px;
+    --font-subtitle: 13px;
+    --font-btn: 17px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.header-main {
+    padding: 30px 40px 0 40px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+  .logo-title {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: var(--color-primary);
+      font-size: var(--font-logo);
+      font-weight: 400;
+      line-height: 35.2px;
+      letter-spacing: 0.06em;
+      margin-bottom: 10px;
+      text-align: center;
+  }
+
+  .logo-subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-light-xl);
+    font-size: var(--font-subtitle);
+    line-height: 14.95px;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  .nav-list {
+   display: flex;
+   gap: 36px;
+   list-style-type: none;
+    
+  }
+
+  .nav-link {
+    text-decoration: none;
+}
+
+
+
+.active {
+    border-bottom: 3px solid var(--color-primary); 
+  }
+
+  .nav-link {
+    color: var(--color-dark-s);
+    font-size: var(--font-h5);
+    font-weight: 400;
+    line-height: 24px;
+    display: inline;
+  }
+
+  .nav-link:hover {
+      color: var(--color-light-s);
+      transition: 0.3s;
+  }
+
+  }
+  
